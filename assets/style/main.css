@@ -1,0 +1,122 @@
+:root {
+        --main-color: #f70776;
+        --shadow-color: #f70776b3;
+        --transition: .6s;
+    }
+    
+    
+    .active{
+        color: var(--main-color) !important;
+    }
+    /* start navbar */
+    .navbar{
+    width: 20%;
+    background-color: rgb(0, 0, 0) !important;
+    transition: var(--transition) !important;
+    z-index: 1;
+    }
+    
+    .navbar-brand img{
+        width: 150px !important;
+        
+    }
+    
+
+    .nav-link:hover{
+    color: var(--main-color) !important;
+    }
+   
+    
+    /* start banner */
+    .banner{
+        background-image: url('/assets/image/girl.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .overlay{
+        background: linear-gradient(90deg, black,var(--shadow-color));
+    }
+    .btn-banner{
+        border:1px solid var(--main-color);
+        color:white;
+        background-color: rgba(0, 0, 0,.1);
+    }
+    .welcome-msg{
+        top:50%;
+        left: 10%;
+    }
+/* // -------start about--------- */
+    
+    
+    .prog1{
+        width: 95%;
+        animation: prog 3s infinite alternate;
+    }
+@keyframes prog {
+        0%{
+                width: 95%;
+        }
+        100%{
+                width: 0%;
+        }
+}
+    .prog2{
+        width: 85%;
+        animation: prog2 3s infinite alternate;
+    }
+@keyframes prog2 {
+        0%{
+                width: 0%;
+        }
+        100%{
+                width: 85%;
+        }
+}
+    .prog3{
+        width: 65%;
+        animation: prog3 3s infinite alternate;
+    }
+@keyframes prog3 {
+        0%{
+                width: 65%;
+        }
+        100%{
+                width: 0%;
+        }
+}
+    .prog4{
+        width: 75%;
+        animation: prog4 3s infinite alternate;
+    }
+@keyframes prog4 {
+        0%{
+                width: 75%;
+        }
+        100%{
+                width: 5%;
+        }
+}
+
+/* // ----------feedback--------- */
+/* .feedback{
+    height: 100vh;
+} */
+/* // ----------contact--------- */
+/* .contact{
+    width: 100%;
+    height: 100vh;
+} */
+.btn-contact:hover{
+    background-color: #f70776;
+
+}
+
+@media (min-width: 0px) {
+    .div{
+    display: none;
+    }
+    .nav-link i{
+    display:none;
+    }
+    }
